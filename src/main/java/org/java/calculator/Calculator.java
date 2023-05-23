@@ -40,7 +40,8 @@ public class Calculator {
 		return getX()-getY();
 		
 	}
-	public float divide() {
+	public float divide() throws Exception {
+		if(getY()==0)throw new Exception("numero non divisibile");
 		return getX()/getY();
 		
 	}
